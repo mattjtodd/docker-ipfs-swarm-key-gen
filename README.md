@@ -15,6 +15,6 @@ As this is really a simple file which just uses a random hex encoded string, the
 
 ```
 docker run --init --rm -it -u nobody \
-    alpine:3.11 echo "/key/swarm/psk/1.0.0/"; echo "/base16/"; openssl rand -hex 32;`
+    alpine:3.11 echo "/key/swarm/psk/1.0.0/"; echo "/base16/"; openssl rand -hex 32;
 ```
 
