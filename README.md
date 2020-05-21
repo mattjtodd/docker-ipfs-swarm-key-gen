@@ -13,5 +13,5 @@ Published to DockerHub @ [docker.io/mattjtodd/ipfs-swarm-key-gen](https://hub.do
 
 As this is really a simple file which just uses a random hex encoded string, the following could also be used:
 
-`docker run --rm -it alpine:3.11 echo "/key/swarm/psk/1.0.0/"; echo "/base16/"; openssl rand -hex 32;`
+`docker run --init --rm -it -u nobody alpine:3.11 echo "/key/swarm/psk/1.0.0/"; echo "/base16/"; openssl rand -hex 32;`
 
