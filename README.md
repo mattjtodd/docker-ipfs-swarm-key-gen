@@ -14,6 +14,7 @@ Published to DockerHub @ [docker.io/mattjtodd/ipfs-swarm-key-gen](https://hub.do
 As this is really a simple file which just uses a random hex encoded string, the following could also be used:
 
 ```
-{echo "/key/swarm/psk/1.0.0/"; echo "/base16/"; openssl rand -hex 32;}
+#!/usr/bin/env sh
+echo "/key/swarm/psk/1.0.0/"; echo "/base16/"; openssl rand -hex 32;
 ```
 
